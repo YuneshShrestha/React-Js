@@ -1,0 +1,21 @@
+button{
+    height:40px;
+    width:80px; 
+    margin:1vh; 
+    color:white;
+    background-color:blueviolet; 
+    border:0.8px solid white;
+    border-radius:4px;
+    margin-left:20px;
+    transition-delay: 0.5;
+}
+button:hover{
+    height:40px;
+    width:80px; 
+    margin:1vh; 
+    color: blueviolet;
+    background-color: white; 
+    border:0.8px solid white;
+    border-radius:4px;
+    margin-left:20px;
+}
