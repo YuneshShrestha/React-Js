@@ -11,7 +11,13 @@ function App() {
     age:19,
   }
   let [count, setcount] = useState(x);
+  let [name, setName] = useState("");
   // count for displaying ... setstate for updating
+  function inputHandler(e)
+  {
+    setName(e.target.value);
+    console.log(name);
+  }
   function increment()
   {
     return setcount(--count);
@@ -21,6 +27,10 @@ function App() {
     return setcount(++count);
     
   }
+  function resetbtn()
+  {
+    setcount(0);
+  }
   return (
    <div>
     <Navbar />
@@ -29,6 +39,8 @@ function App() {
         <button onClick={increment}>-</button>
         {count}
         <button onClick={decrement}>+</button>
+        <button onClick={resetbtn}>Reset</button>
+        <input type="text" value={name} onChange={inputHandler}/>
     </div>
    </div>
   );
