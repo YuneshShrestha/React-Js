@@ -24,6 +24,10 @@ a{
     justify-content: space-between;
     line-height: 8vh;
 }
+.my-container{
+    width: 80%;
+    margin: 0 auto;
+}
 .nav-links{
     display: flex;   
 }

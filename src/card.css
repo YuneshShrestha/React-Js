@@ -1,0 +1,15 @@
+.card{
+    width: 500px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 10px 0px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+}
+.card p{
+    color: white;
+}
+.card h3{
+    color: white;
+}
