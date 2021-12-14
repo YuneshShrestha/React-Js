@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import {Button} from './Button';
-// import {Button2} from './Button';
-import Navbar from './Navbar';
-// import App from './App';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar/>
-    {/* <App/>
-    <Button />
-    <Button2 /> */}
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
