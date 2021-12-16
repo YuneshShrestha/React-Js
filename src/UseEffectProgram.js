@@ -4,9 +4,11 @@ function UseEffectProgram() {
     let [resourceType, setResourceType]=useState("Posts");
     let [items, setItems] = useState([]);
     useEffect(()=>{
-        fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
-        .then(response => response.json())
-        .then(json => setItems(json))
+        console.log("Hello");
+        return ()=>{
+            // everytime you use
+            console.log("Clean and use");
+        }
     },[resourceType]);
     return (
         <div>
