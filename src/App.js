@@ -1,20 +1,19 @@
 import React from "react";
-import Friend from "./Friend";
-import Form from "./Form";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const App=()=>{
-    let friends=[
-        {name:"Yunesh", age:19},
-        {name:"Sejal", age:19},
-        {name:"Ram", age:19},
-    ];
-    // let friends=[
-    //    'Yunesh',
-    //    'Ram',
-    //    'Gita'
-    // ];
+
     return (
-        <div>
-            <Form/>
+        <div className="container">
+            <h1 className="text-center">Welcome</h1>
+            <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+            <button className="btn btn-outline-danger ">Hello</button>
         </div>
     );
 };
