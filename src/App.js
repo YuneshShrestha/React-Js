@@ -1,6 +1,6 @@
 import React from "react";
 import Friend from "./Friend";
-// import Form from "./Form";
+import Form from "./Form";
 const App=()=>{
     let friends=[
         {name:"Yunesh", age:19},
@@ -14,11 +14,7 @@ const App=()=>{
     // ];
     return (
         <div>
-            {
-                friends.map((friend)=>{
-                    return <Friend name={friend.name} age={friend.age}/>
-                })
-            }
+            <Form/>
         </div>
     );
 };
